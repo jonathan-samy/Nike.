@@ -1,0 +1,707 @@
+
+* {margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth;}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 4000px;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    background-image: url(imags/bg1.png);
+    background-size: cover;
+    background-position: center;
+}
+section nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+section nav .logo {
+    font-size: 25px;
+    color: #c72092;
+    margin-left: 50px;
+    cursor: pointer;
+    position: relative;
+}
+section nav .logo span {
+    color: #6c14d0;
+    text-decoration: underline;
+}
+
+section nav ul {
+    list-style: none;
+}
+section nav ul li {
+    display: inline-block;
+    margin: 5px 15px;
+    padding-top: 10px;
+}
+section nav ul li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    font-weight: 600;
+}
+section nav ul li a:hover {
+    color: #6c14d0;
+    text-decoration: none;
+
+}
+
+section nav .icons i {
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+    margin-right: 20px;
+}
+section nav .icons i:hover {
+    color: #c72092;
+}
+
+section .main .main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .main .main-content .main-text h1 {
+    font-size: 90px;
+    line-height: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    background:linear-gradient(to right , #c72092 , #6c14d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: 43px;
+    left: 5%;
+}
+
+section .main .main-content .main-text h1 span {
+    font-size: 70px;
+    background:linear-gradient(to right , #c72092 , #6c14d0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section .main .main-content .main-text p {
+    width: 600px;
+    text-align: justify;
+    line-height: 21px;
+    position: relative;
+    top: 85px;
+    left: 5%;
+}
+
+section .main .main-content .main-images img {
+    width: 500px;
+    position: relative;
+    left: -40px;
+    top: 75px;
+}
+
+section .main .social-icons {
+    position: absolute;
+    padding-top: 30px;
+    margin-left:  70px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+section .main .social-icons i {
+    margin: 8px 0;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px;
+}
+section .main .social-icons i:hover {
+    color: #c72092;
+    scale: 1.3;
+}
+ section button {
+    background: linear-gradient(to right , #6c14d0 , #c72092);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    font-weight: 600;
+    margin-left: 100px;
+    position: absolute;
+    bottom: 6%;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+ } 
+ section button:hover {
+    background:linear-gradient(to right , silver , silver);
+    color: #6c14d0;
+ }
+
+
+
+
+ /* prouducts */
+
+ .products {
+    width: 100%;
+    height: 100vh;
+    padding: 25px 0;
+ }
+ .Products h2 {
+    margin: 80px 0;
+    font-size: 50px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background: linear-gradient( to right , #6c14d0 , #c72092);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+.Products .box {
+    width: 96%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.Products .box .card {
+    width: 280px;
+    height: 480px;
+    box-shadow: 0 0 10px #6c14d07f;
+    text-align: center;
+    padding: 10px 20px;
+    background: #f6f6f6;
+}
+
+.Products .box .card .samll-card{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    margin-right:  20px;
+    transform: translateX(-20px);
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.Products .box .card:hover .samll-card {
+    transform: translateX(2px);
+    cursor: pointer;
+    opacity: 1;
+}
+
+.Products .box .card .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ .Products .box .card .image img {
+    width:150px ;
+    margin: 15px 0;
+    transition: 0.3s;
+ }
+
+ .Products .box .card:hover .image img {
+    transform: scale(1.2);
+ }
+
+ .Products .box .card .samll-card i {
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 2px 0;
+    line-height: 40px;
+    border: 2px solid silver;
+    transition: 0.2s;
+ }
+
+  .Products .box .card .samll-card i:hover {
+    color: #c72092;
+  }
+
+   .Products .box .card .Products-text h3 {
+    font-size: 30px;
+    margin-top: 15px;
+   }
+
+   .Products .box .card .Products-text p {
+    color: rgba(0, 0, 0, 0.655);
+    line-height: 21px;
+    margin: 8px 0;
+   }
+
+    .Products .box .card .Products-text h4 {
+        margin: 7px 0;
+    }
+
+     .Products .box .card .Products-text .Products-star {
+        color: orange;
+        margin-bottom: 20px;
+        cursor: pointer;
+     }
+     
+     .Products .box .card .Products-text .btn {
+        text-decoration: none;
+        padding: 10px 20px;
+         background: linear-gradient( to right , #6c14d0 , #c72092);
+         color: white;
+         transition: 0.3s;
+     }
+
+     .Products .box .card .Products-text .btn:hover {
+        background: linear-gradient(to right , silver , silver);
+        color:#6c14d0;
+     }
+
+
+     /* about */
+
+
+     .about {
+        width: 100%;
+        height: 100vh;
+        padding: 35px 0;
+     }
+     .about h1 {
+        font-size: 60px;
+        margin-top: 20px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: black;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-transform: uppercase;letter-spacing: 2px;
+        padding: 1px;
+     }
+
+     .about h1 span {
+        background: linear-gradient(to right , #6c14d0 , #c72092);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-left: 15px;
+     }
+
+     
+     .about .about-main {
+        position: relative;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+     }
+
+     .about .about-main .about-image {
+        display: flex;
+        margin-top: 50px;
+     }
+
+     .about .about-main .about-image .about-small-image {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 15px;
+     }
+
+    #imagebox {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+
+     .about .about-main .about-image .about-small-image img {
+        height: 95px;
+        margin: 15px 0;
+        cursor: pointer;
+        background: linear-gradient(to right , #6c14d0 , #c72092);
+        display: block;
+        border-radius: 10px;
+        padding: 5px 5px;
+        box-shadow: 0 0  10px rgba(0, 0, 0, 0.824);
+        margin-left: 10px;
+        opacity: 0.8;
+        transition: 0.5s;
+     } 
+
+      .about .about-main .about-image .about-small-image img:hover {
+        opacity: 1;
+        scale: 1.2;
+      }
+
+      .about .about-main .image-container {
+        padding:10px ;
+        display: flex;
+      }
+      .about .about-main .image-container img {
+        border: 3px solid #6c14d0 ;
+        border-radius: 20px;
+        height: 350px;
+        padding: 30px;
+        box-shadow: 0 0 10px #6c14d0;
+        margin-top: 50px;
+        margin-left: 20px;
+      }
+
+      .about .about-main .about-text {
+        margin-top: 50px;
+      }
+      .about .about-main .about-text p {
+        background: linear-gradient(to right , #6c14d0 , #c72092);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 20px;
+        width: 480px;
+        height: 300px;
+        text-align: justify;
+        padding: 25px 30px;
+        border: 3px solid #6c14d0;
+        border-radius: 20px;
+        box-shadow: 0 0 10px #c72092;
+      }
+
+      .about .about-btn {
+        color: black;
+        background:none;
+        position: relative;
+        top: -17%;
+        left: 52%;
+        font-weight: 700;
+        border-radius: 10px;
+        transform: translate(-50% , -50%);
+        padding: 10px 25px;
+        border: 3px solid #6c14d0;
+        text-decoration: none;
+        box-shadow: 0 0 10px #6c14d0;
+        transition: 0.5s;
+      }
+     
+      .about .about-btn:hover {
+        border: 2px solid transparent;
+        background: #6c14d0;
+        color: white;
+      }
+
+
+      /* review */
+
+
+
+
+      .review {
+        width: 100%;
+        height: 100vh;
+        padding-top:100px ;
+      }
+
+
+      .review h1 {
+        font-size: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        font-weight: 700;
+      }
+
+      .review h1 span {
+        background: linear-gradient(to right , #6c14d0 , #c72092);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-left: 15px;
+      }
+
+      .review .review-box {
+        width: 95%;
+        position: relative;
+        top: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto ;
+      }
+
+      .review .profile .profile-image {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 5px 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.505);
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .review .profile .profile-image:hover {
+        scale: 1.2;
+      }
+
+      .review .profile-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .review .profile {
+        display: flex;
+        align-items: center;
+      }
+
+
+      .review .review-box .reiview-card {
+         width: 500px;
+         background: #f6f6f6;
+         padding: 20px 25px;
+         border-radius: 5px;
+         margin: 15px;
+         box-shadow: 0 0 10px black;
+      }
+
+      .review .review-box .reiview-card .card-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .review .review-box .reiview-card .card-top .profile .name {
+        margin-left: 20px;
+        line-height: 22px;
+      }
+
+    
+      .review .review-box .reiview-card .card-top .profile .name strong {
+        font-size: 20px;
+      }
+
+        .review .review-box .reiview-card .card-top .profile .name .like i {
+            color: orange;
+            display: inline-block;
+            font-size: 12px;
+            }
+
+        .review .review-box .reiview-card .comment p {
+            text-align: justify;
+             margin-top: 15px;
+             line-height: 22px;
+        }
+
+
+        .services {
+            width: 70%;
+            margin-top: 200px;
+            text-align: center;
+            padding: 80px 0 20px 0 ;
+            margin-left: 150px;
+        }
+
+        .services h1 {
+            font-size: 60px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        
+        .services h1 span {
+        margin-left: 15px;
+        background: linear-gradient(to right , #6c14d0 , #c72092);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        }
+
+        .services .services-card {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            top: 50px;
+        }
+
+        .services .services-box i {
+            color: orange;
+            font-size: 60px;
+            margin: 20px 0;
+            cursor: pointer; 
+            transition: 0.3s;
+        }
+
+        .services .services-box i:hover {
+            color:gold ;
+            scale: 1.2;
+        }
+
+        .services .services-box p {
+            text-align: center;
+            color: rgba(0, 0, 0, 0.395);
+            margin-bottom: 60px;
+        }
+
+
+        /* login form */
+
+
+
+        .login-form {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: url(imags/loging_bg.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .login-form .left img {
+            width: 550px;
+        }
+
+        .login-form .right {
+            position: relative;
+            top: -40px;
+            left: -140px;
+            padding: 50px 80px;
+        }
+
+        .login-form .right h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 45px;
+            margin-bottom: 45px;
+        }
+
+        .login-form .right p {
+            margin-bottom: 5px;
+        }
+
+        .login-form .right .user {
+            border: 2px solid #6c14d0;
+            border-radius: 7px;
+            width: 350px;
+            height: 40px;
+            display: flex;
+        }
+
+        .login-form .right .user i {
+            position: relative;
+            top: 10px;
+            left: 15px;
+            color: #c72092;
+        }
+        
+        .login-form .right .user .username {
+            position: relative;
+            left: 9%;
+            width: 295px;
+            background: none;
+            outline: none;
+            border: none;
+            display: flex;
+            font-size: 15px;
+        }
+
+         .login-form .right .password-tag {
+            margin-bottom: 15px 0 5px 0;
+         }
+
+         .login-form .right .password {
+            border: 2px solid #6c14d0;
+            border-radius: 7px;
+            width: 350px;
+            height: 40px;
+            display: flex;
+         }
+
+         .login-form .right .password i {
+            position: relative;
+            top: 10px;
+            left: 15px;
+            color: #c72092;
+         }
+
+         .login-form .right .password input {
+            position: relative;
+            left: 9%;
+            width: 295px;
+            background: none;
+            outline: none;
+            border: none;
+            display: flex;
+            font-size: 15px;
+         }
+
+         .login-form .right .forget {
+            position: relative;
+            left: 60%;
+            margin: 6px 0 10px 0;
+            cursor: pointer;
+         }
+
+         .login-form .right button {
+            width: 350px;
+            color: white;
+            padding: 7px 20px;
+            border: none;
+            border-radius: 7px;
+            font-weight: 700;
+            font-size: 20px;
+            cursor: pointer;
+            background: linear-gradient(to right , #6c14d0 , #c72092);
+            transition: 0.8s;
+         }
+
+         .login-form .right button:hover {
+            background:none;
+            color: #6c14d0;
+         }
+
+         .login-form .right .lofin-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+         }
+
+         .login-form .right .lofin-icon a {
+            width: 40px;
+            height: 40px;
+            margin: 0 2px;
+            border-radius: 50%;
+            background: #f6f6f6;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.642);
+         }
+
+         .login-form .right .lofin-icon img {
+            width: 30px;
+            margin: 5px 5px;
+            transition: 0.2s;
+         }
+
+         .login-form .right .lofin-icon img:hover {
+            scale: 1.2;
+         }
+
+         
+
+
+
